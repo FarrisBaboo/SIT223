@@ -25,14 +25,14 @@ pipeline {
             }
 	    post {
 		success {
-                    mail to: 'fbaboo0111@gmail.com',
-                    subject: 'Pipeline Success',
-                    body: 'Pipeline succeeded.'
+                    mail to: "fbaboo0111@gmail.com",
+                    subject: "Pipeline Success",
+                    body: "Tests succeeded"
                 }
                 failure {
-                    mail to: 'fbaboo0111@gmail.com',
-                    subject: 'Pipeline Failure',
-                    body: 'Pipeline failed. Please check the Jenkins log.'
+                    mail to: "fbaboo0111@gmail.com",
+                    subject: "Pipeline Failure",
+                    body: "Tests failed. Please check the Jenkins log"
                 }
 	    }
         }
@@ -53,14 +53,14 @@ pipeline {
 	    }
 	    post {
 		success {
-                    mail to: 'fbaboo0111@gmail.com',
-                    subject: 'Pipeline Success',
-                    body: 'Pipeline succeeded.'
+                    mail to: "fbaboo0111@gmail.com",
+                    subject: "Pipeline Success",
+                    body: "Security scan succeeded"
                 }
                 failure {
-                    mail to: 'fbaboo0111@gmail.com',
-                    subject: 'Pipeline Failure',
-                    body: 'Pipeline failed. Please check the Jenkins log.'
+                    mail to: "fbaboo0111@gmail.com",
+                    subject: "Pipeline Failure",
+                    body: "Security scan failed. Please check the Jenkins log"
                 }
 	    }
 	}
