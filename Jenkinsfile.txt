@@ -27,13 +27,13 @@ pipeline {
 		success {
                     mail to: "fbaboo0111@gmail.com",
                     subject: "Pipeline Success",
-                    body: "Pipeline succeeded"
+                    body: "Pipeline succeeded",
 		    attachLog: true
                 }
                 failure {
                     mail to: "fbaboo0111@gmail.com",
                     subject: "Pipeline Failure",
-                    body: "Pipeline failed. Please check the Jenkins log"
+                    body: "Pipeline failed. Please check the Jenkins log",
 		    attachLog: true
                 }
 	    }
@@ -57,13 +57,13 @@ pipeline {
 		success {
                     mail to: "fbaboo0111@gmail.com",
                     subject: "Pipeline Success",
-                    body: "Pipeline succeeded"
+                    body: "Pipeline succeeded",
 		    attachLog: true
                 }
                 failure {
                     mail to: "fbaboo0111@gmail.com",
                     subject: "Pipeline Failure",
-                    body: "Pipeline failed. Please check the Jenkins log"
+                    body: "Pipeline failed. Please check the Jenkins log",
 		    attachLog: true
                 }
 	    }
