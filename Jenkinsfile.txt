@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         DIRECTORY_PATH = "/Users/fbabo/OneDrive/Documents/Jenkinsfile.txt"
-        TESTING_ENVIRONMENT = "Jenkinss"
+        TESTING_ENVIRONMENT = "Jenkins"
         PRODUCTION_ENVIRONMENT = "AWS EC2 instance"
     }
     
