@@ -25,15 +25,15 @@ pipeline {
             }
 	    post {
 		success {
-                    mail to: "fbaboo0111@gmail.com",
-                    subject: "Pipeline Success",
-                    body: "Pipeline succeeded",
+                    emailext to: "fbaboo0111@gmail.com",
+                    subject: "Unit and Integration Tests Success",
+                    body: "Unit and Integration Tests succeeded",
 		    attachLog: true
                 }
                 failure {
-                    mail to: "fbaboo0111@gmail.com",
-                    subject: "Pipeline Failure",
-                    body: "Pipeline failed. Please check the Jenkins log",
+                    emailext to: "fbaboo0111@gmail.com",
+                    subject: "Unit and Integration Tests Failure",
+                    body: "Unit and Integration Tests failed. Please check the Jenkins log",
 		    attachLog: true
                 }
 	    }
@@ -55,15 +55,15 @@ pipeline {
 	    }
 	    post {
 		success {
-                    mail to: "fbaboo0111@gmail.com",
-                    subject: "Pipeline Success",
-                    body: "Pipeline succeeded",
+                    emailext to: "fbaboo0111@gmail.com",
+                    subject: "Security Scan Success",
+                    body: "Security Scan succeeded",
 		    attachLog: true
                 }
                 failure {
-                    mail to: "fbaboo0111@gmail.com",
-                    subject: "Pipeline Failure",
-                    body: "Pipeline failed. Please check the Jenkins log",
+                    emailext to: "fbaboo0111@gmail.com",
+                    subject: "Security Scan Failure",
+                    body: "Security Scan failed. Please check the Jenkins log",
 		    attachLog: true
                 }
 	    }
